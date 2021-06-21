@@ -1,0 +1,13 @@
+form {
+  width: 100%;
+}
+
+.input {
+  border-radius: 0.35rem;
+  padding: 0.5rem 0.25rem;
+  border: 1px solid #ccc;
+}
+
+.input:focus {
+  border: 2px solid #aaa;
+}
