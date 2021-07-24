@@ -32,7 +32,6 @@ export const Validate = <T,>(
     const fn = validations[el];
     const element = elements[el];
     const errorMessage = fn(element);
-    console.log(errorMessage);
     if (errorMessage === null) {
       element.setCustomValidity("");
       return acc;

@@ -13,10 +13,7 @@ const validations: Validations<State> = {
     !Number.isNaN(e.valueAsNumber) && e.valueAsNumber > 18
       ? null
       : "Você precisa ser maior de idade",
-  name: (e) => {
-    console.log({ value: e.value });
-    return e.value === "" ? "Você precisa preencher o nome" : null;
-  },
+  name: (e) => e.value === "" ? "Você precisa preencher o nome" : null,
 };
 
 type Errors<T> = Partial<
